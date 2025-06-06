@@ -34,13 +34,14 @@
     flex-direction: column;
     row-gap: 15px;
 }
-.get-started-button{
+.get-started-button, .about-cta{
     padding: 11px 50px 11px 50px;
     background-color: #9A3EAA;
     border: none;
     color: white;
     font-size: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .sign-up-button{
     padding: 10px 10px 10px 10px;
@@ -51,6 +52,7 @@
     border-width: 3px;
     border-radius: 5px;
     border-style: solid;
+    cursor: pointer;
 }
 @media (hover: hover){
     .get-started-button:hover{
@@ -59,4 +61,45 @@
     .sign-up-button:hover{
         border-color: #a09696;
     }
+}
+
+.about-section{
+    display: flex;
+    background-color: #F9F6F6;
+    height: 500px;
+}
+.about-words-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+.about-words{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    row-gap: 30px;
+}
+.about-subtitle{
+    text-align: center;
+    color: #9A3EAA;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.about-text{
+    font-size: 20px;
+    font-family: Roboto, Arial;
+}
+.about-cta-container{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.about-photo-container{
+    width: auto;
+    padding:5px 100px 5px 50px;
+}
+.about-photo{
+    height: 100%;
 }
