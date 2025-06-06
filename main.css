@@ -1,0 +1,62 @@
+.hero-section{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.hero-image-container{
+    height: 100%;
+}
+.hero-image-container img{
+    height: 100%;
+}
+.hero-words-cta{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.hero-words-container{
+    display: flex;
+    flex: 1;
+    /*justify-content: flex-end;*/
+    align-items: flex-end;
+}
+.hero-words-container p{
+    text-align: center;
+    font-size: 40px;
+    color: #202022;
+}
+.hero-cta-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.get-started-button{
+    padding: 11px 50px 11px 50px;
+    background-color: #9A3EAA;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.sign-up-button{
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    color: #1897A1;
+    background-color: #FFF9F9;
+    border-color: #DBCBCB;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+}
+@media (hover: hover){
+    .get-started-button:hover{
+        background-color: #9f46af;
+    }
+    .sign-up-button:hover{
+        border-color: #a09696;
+    }
+}

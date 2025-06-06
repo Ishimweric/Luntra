@@ -1,0 +1,44 @@
+.header{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+.logo-section{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.parot-logo{
+    height: 70px;
+}
+.logo-words{
+    font-size: 50px;
+    color: #9A3EAA;
+}
+.drop-down-icon{
+    font-size: 18px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    column-gap: 30px;
+    padding-right: 30px;
+    color: #9A9393;
+    font-size: 20px;
+}
+.links span{
+    cursor: pointer;
+    transition: color 0.5s;
+}
+@media (hover: hover){
+    .links span:hover {
+        
+        color: #858181;
+    }
+}
