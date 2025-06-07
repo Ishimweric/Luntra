@@ -181,7 +181,7 @@
     display: flex;
     flex-direction: column;
 }
-.testimonials-title, .ourteam-title{
+.testimonials-title, .ourteam-title, .faqs-title{
     height: 50px;
     color: #9A3EAA;
     font-size: 25px;
@@ -295,4 +295,44 @@
     display: flex;
     align-items: center;
     padding: 0 10px 0 10px;
+}
+
+.faq-section{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.faqs-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 0 20px 20px 20px;
+}
+.faq-container{
+    flex: 1;
+    background-color: #F9F6F6;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-color: #9f46af;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+}
+.faq-container:hover{
+    border-color: #650775;
+    border-style: solid;
+    margin: 2px;
+}
+.faq-question{
+    flex: 1;
+    font-size: 20px;
+}
+.faq-icon{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
