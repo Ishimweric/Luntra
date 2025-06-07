@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 @media (hover: hover){
-    .get-started-button:hover{
+    .get-started-button:hover, .about-cta:hover{
         background-color: #9f46af;
     }
     .sign-up-button:hover{
@@ -102,4 +102,166 @@
 }
 .about-photo{
     height: 100%;
+}
+
+.products-section{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+.products-toggle{
+    background-color: aqua;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.actual-product{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.product-title{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #9A3EAA;
+    font-size: 30px;
+}
+.product-info{
+    flex: 1;
+    display: flex;
+    padding: 10px 30px 10px 10px;
+}
+.product-description-container{
+    flex: 1;
+}
+.product-description-container ul{
+    list-style-position: inside;
+    margin-left: 5px;
+}
+.product-pretitle{
+    color: black;
+    font-size: 20px;
+}
+.product-description{
+    font-weight: 300;
+}
+.left-scroll, .right-scroll{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-scroll img, .right-scroll img{
+    cursor: pointer;
+}
+.pagination-dots{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+}
+.dot{
+    height: 14px;
+    width: 14px;
+    background-color: gray;
+    border-radius: 100%;
+}
+.testimonials{
+    background-color: #F9F6F6;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.testimonials-title, .ourteam-title{
+    height: 50px;
+    color: #9A3EAA;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.testimonials-container{
+    display: flex;
+    flex: 1;
+    column-gap: 5px;
+}
+.testimonial1, .testimonial2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 5px 30px 10px 50px;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: #9A3EAA;
+    border-style: solid;
+}
+.testimonial2{
+    margin: 5px 50px 10px 30px;
+}
+.actual-testimonial{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+}
+.commentor-photo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commentor-info{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #615D5D;
+}
+.commentor-image{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.our-motto-container{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-motto-container h1{
+    font-size: 50px;
+    color:#9A3EAA;
+}
+
+.our-team-section{
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.our-team{
+    background-color: green;
+    display: flex;
+    flex: 1;
+    column-gap: 20px;
+    padding: 20px;
+}
+.team-member1, .team-member2, .team-member3{
+    flex: 1;
+    background-color: #8a6363;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
