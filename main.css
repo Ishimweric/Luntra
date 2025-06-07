@@ -480,6 +480,7 @@ form{
     align-items: start;
     column-gap: 10px;
     margin-bottom: 5px;
+    flex-direction: column;
 }
 .input-row label{
     width: 80px;
@@ -524,11 +525,22 @@ textarea::placeholder{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-right: 60px;
 }
 .send-form-button input:hover{
     background-color: #650775;
 }
-
+.success-message{
+    display: none;
+    color: #2e7d32;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.success-message.active{
+    display: block;
+}
 /*tablet responsivenes*/
 @media( max-width:768px ){
     .hero-section{

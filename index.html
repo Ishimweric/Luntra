@@ -301,7 +301,7 @@
         <section class="form-section">
             <h3 class="form-title">CONTACT US</h3>
             <div class="form-container">
-                <form>
+                <form id="contact-form">
                     <div class="input-row">
                         <label for="name">Name: </label>
                         <input type="text" id="name" placeholder="Enter your name" required>
@@ -309,6 +309,7 @@
                     <div class="input-row">
                         <label for="e-mail">E-mail: </label>
                         <input type="email" id="e-mail" placeholder="Enter your E-mail" required>
+                        
                     </div>
                     <div class="input-row">
                         <label for="message" class="input-message">Message: </label>
@@ -317,6 +318,7 @@
                     <div class="send-form-button">
                         <input type="submit" value="SEND">
                     </div>
+                    <span class="success-message"></span>
                 </form>
             </div>
         </section>
