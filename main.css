@@ -181,7 +181,7 @@
     display: flex;
     flex-direction: column;
 }
-.testimonials-title, .ourteam-title, .faqs-title, .chatbot-title{
+.testimonials-title, .ourteam-title, .faqs-title, .chatbot-title, .form-title{
     height: 50px;
     color: #9A3EAA;
     font-size: 25px;
@@ -394,4 +394,75 @@
 }
 .arrow-icon {
   filter: invert(1) brightness(2);
+}
+
+.form-section{
+    background-color: #FFF9F9;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-row{
+    display: flex;
+    align-items: start;
+    column-gap: 10px;
+    margin-bottom: 5px;
+}
+.input-row label{
+    width: 80px;
+    font-size: 20px;
+    margin-top: 12px;
+}
+.input-message{
+    margin-top: 50px;
+}
+.input-row input{
+    width: 373px;
+    padding: 12px 5px;
+    border-color: #9f46af;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+}
+input::placeholder{
+    font-size: 20px;
+}
+textarea{
+    border-color: #9f46af;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px;
+}
+textarea::placeholder{
+    font-size: 20px;
+}
+.send-form-button{
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+}
+.send-form-button input{
+    padding: 8px 25px;
+    background-color: #9f46af;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.send-form-button input:hover{
+    background-color: #650775;
 }
