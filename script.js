@@ -5,4 +5,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         hamburger.classList.toggle('active');
         navlinks.classList.toggle('active');
     });
+
+    //for faqs
+    const faqContainers = document.querySelectorAll('.faq-container');
+    faqContainers.forEach(container=>{
+        container.addEventListener('click', ()=>{
+            container.classList.toggle('active');
+        });
+    });
 });
