@@ -246,13 +246,12 @@
 }
 
 .our-team-section{
-    background-color: cyan;
+    background-color:#F9F6F6;
     display: flex;
     flex-direction: column;
     height: 500px;
 }
 .our-team{
-    background-color: green;
     display: flex;
     flex: 1;
     column-gap: 20px;
@@ -260,8 +259,40 @@
 }
 .team-member1, .team-member2, .team-member3{
     flex: 1;
-    background-color: #8a6363;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 10px;
+    border-color: #9A3EAA;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+}
+.member-image-container{
+    height: 200px;
+    margin: 20px;
+}
+.member-image{
+    height: 100%; 
+    border-radius: 100%;
+}
+.member-credentials{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.member-name{
+    font-size: 25px;
+}
+.member-role{
+    font-size: 20px;
+    color: #615D5D;
+}
+.member-bio{
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
 }
