@@ -1,0 +1,24 @@
+footer{
+    display: flex;
+    align-items: center;
+    height: auto; 
+    flex-direction: column;
+    row-gap: 2px;
+    padding:0 20px;
+}
+.privacy-policy{
+    width: 300px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    width: 100%;
+}
+.social-links span, .privacy-policy p{
+    cursor: pointer;
+} 

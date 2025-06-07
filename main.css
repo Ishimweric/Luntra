@@ -1,24 +1,28 @@
 .hero-section{
-    height: 500px;
+    min-height: 500px;
     display: flex;
-    flex-direction: row;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 .hero-image-container{
     height: 100%;
+    max-width: 500px;
 }
 .hero-image-container img{
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 .hero-words-cta{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 1;
+    padding: 20px;
 }
 .hero-words-container{
     display: flex;
     flex: 1;
-    /*justify-content: flex-end;*/
     align-items: flex-end;
 }
 .hero-words-container p{
@@ -66,7 +70,8 @@
 .about-section{
     display: flex;
     background-color: #F9F6F6;
-    height: 500px;
+    height: auto;
+    flex-wrap: wrap;
 }
 .about-words-container{
     display: flex;
@@ -101,13 +106,15 @@
     padding:5px 100px 5px 50px;
 }
 .about-photo{
-    height: 100%;
+    height: auto;
 }
 
 .products-section{
     display: flex;
     flex-direction: column;
-    height: 600px;
+    /* height: auto; */
+    width: 100%;
+    padding: 20px;
 }
 .products-toggle{
     background-color: aqua;
@@ -120,6 +127,7 @@
     flex: 1;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .actual-product{
     flex:1;
@@ -137,10 +145,13 @@
 .product-info{
     flex: 1;
     display: flex;
-    padding: 10px 30px 10px 10px;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 .product-description-container{
     flex: 1;
+    /* min-width: 200px; */
+    padding: 10px;
 }
 .product-description-container ul{
     list-style-position: inside;
@@ -153,14 +164,25 @@
 .product-description{
     font-weight: 300;
 }
+/*added*/
+.product-image{
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+.product-image img{
+    max-width: 100%;
+    height: auto;
+}
 .left-scroll, .right-scroll{
-    width: 100px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .left-scroll img, .right-scroll img{
     cursor: pointer;
+    max-width: 100%;
 }
 .pagination-dots{
     height: 40px;
@@ -175,42 +197,45 @@
     background-color: gray;
     border-radius: 100%;
 }
+
 .testimonials{
     background-color: #F9F6F6;
-    height: 400px;
+    /* height: auto; */
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 20px;
 }
 .testimonials-title, .ourteam-title, .faqs-title, .chatbot-title, .form-title{
     height: 50px;
     color: #9A3EAA;
     font-size: 25px;
     text-align: center;
-    padding: 10px 0 0 0;
+    padding: 10px 0;
 }
 .testimonials-container{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
+    flex-wrap: wrap;
     column-gap: 5px;
 }
 .testimonial1, .testimonial2{
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin: 5px 30px 10px 50px;
+    margin: 10px;
     border-radius: 8px;
     border-width: 3px;
     border-color: #9A3EAA;
     border-style: solid;
+    min-width: 200px;
 }
-.testimonial2{
-    margin: 5px 50px 10px 30px;
-}
+
 .actual-testimonial{
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 0 10px 0 10px;
+    padding: 10px;
     font-size: 20px;
 }
 .commentor-photo{
@@ -239,6 +264,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .our-motto-container h1{
     font-size: 50px;
@@ -249,11 +275,14 @@
     background-color:#F9F6F6;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    /* height: auto; */
+    width: 100%;
+    padding: 20px;
 }
 .our-team{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
+    flex-wrap: wrap;
     column-gap: 20px;
     padding: 20px;
 }
@@ -268,6 +297,8 @@
     border-radius: 5px;
     border-width: 3px;
     border-style: solid;
+    min-width: 200px;
+    margin: 10px 0;
 }
 .member-image-container{
     height: 200px;
@@ -298,9 +329,11 @@
 }
 
 .faq-section{
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    width: 100%;
 }
 .faqs-container{
     flex: 1;
@@ -338,6 +371,7 @@
 }
 
 .chatbot-section{
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -348,7 +382,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 150px 20px 150px;
+    margin: 0 38px 20px 38px;
     border-color: #9f46af;
     border-radius: 5px;
     border-width: 3px;
@@ -366,9 +400,10 @@
     display: flex;
     align-items: center;
     border-color: #9f46af;
-    border-radius: 10px;
+    border-radius: 30px;
     border-width: 3px;
     border-style: solid;
+    padding-left: 20px;
     margin: 10px 10px 0 10px;
 
 }
@@ -378,6 +413,7 @@
     background-color: #FFF9F9;
     border: none;
     padding: 12px 5px 12px 5px;
+    font-size: 20px;
 }
 .input-box::placeholder{
     font-size: 20px;
@@ -398,9 +434,11 @@
 
 .form-section{
     background-color: #FFF9F9;
-    height: 340px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 20px;
     
 }
 .form-container{
@@ -465,4 +503,198 @@ textarea::placeholder{
 }
 .send-form-button input:hover{
     background-color: #650775;
+}
+
+/*tablet responsivenes*/
+@media( max-width:768px ){
+    .hero-section{
+        min-height: 250px;
+        padding: 15px;
+    }
+    .hero-words-container p{
+        font-size: 30px;
+    }
+    .get-started-button, .sign-up-button, .about-cta{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+    .about-photo-container{
+        padding: 15px;
+    }
+    .about-subtitle{
+        font-size: 22px;
+
+    }
+    .about-text{
+        font-size: 18px;
+    }
+    .product-title{
+        font-size: 25px;
+    }
+    .product-pretitle{
+        font-size: 20px;
+    }
+    .product-description{
+        font-size: 17px;
+    }
+    .left-scroll, .right-scroll{
+        width: 40px;
+    }
+    .testimonials-title, .ourteam-title, .faqs-title,.form-title{
+        font-size: 22px;
+    }
+    .testimonials-container{
+        flex-direction: column;
+    }
+    .our-motto-container h1{
+        font-size: 28px;
+    }
+}
+
+/*Mobile responsiveness*/
+
+@media (max-width: 480px){
+    .hero-section{
+        min-height: 200px;
+        padding: 10px;
+    }
+    .hero-words-container p{
+        font-size: 24px;
+    }
+    .get-started-button, .sign-up-button, .about-cta{
+        font-size: 16px;
+        padding: 8px 30px;
+        width: 100%;
+    }
+    .about-section{
+        padding: 10px;
+    }
+    .about-words-container{
+        padding: 10px;
+    }
+    .about-photo-container{
+        padding: 10px;
+    }
+    .about-subtitle{
+        font-size: 20px;
+    }
+    .about-text{
+        font-size: 16px;
+    }
+    .products-section{
+        padding: 10px;
+    }
+    .products-toggle{
+        height: 40px;
+    }
+    .product-container{
+        flex-direction: column;
+    }
+    .our-motto-container h1{
+        font-size: 22px;
+    }
+    .product-info{
+        padding: 10px;
+    }
+    .product-description-container, .product-image{
+        min-width: 100%;
+    }
+    .left-scroll, .right-scroll{
+        width: 100%;
+        height: 40px;
+        justify-content: space-between;
+    }
+    .product-title{
+        font-size: 22px;
+    }
+    
+    .testimonials{
+        padding: 10px;
+    }
+    .testimonials-container{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .testimonial1, .testimonial2{
+        margin: 5px;
+    }
+    .actual-testimonial{
+        font-size: 16px;
+    }
+    .our-motto-container{
+        height: 60px;
+    }
+    .our-motto-container h1{
+        font-size: 30px;
+    }
+    .our-team-section{
+        padding: 10px;
+    }
+    .our-team{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .team-member1, .team-member2,.team-member3{
+        margin: 5px;
+    }
+    .member-image-container{
+        height: 100px;
+    }
+    .member-name{
+        font-size: 20px;
+    }
+    .member-role{
+        font-size: 16px;
+    }
+    .faq-section{
+        padding: 10px;
+    }
+    .faqs-container{
+        margin: 0 10px 10px 10px;
+    }
+    
+    .chatbot-section{
+        padding: 10px;
+    }
+    .chatbot-area{
+        margin: 0 10px 10px 10px;
+    }
+    .faq-question {
+        font-size: 16px;
+    }
+    .faq-icon{
+        width: 40px;
+    }
+    .input-area{
+        margin: 5px;
+    }
+    .input-box::placeholder{
+        font-size: 16px;
+    }
+    .form-section{
+        padding:10px;
+    }
+    .input-row{
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    .input-row label{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .input-row input, textarea{
+        width: 100%;
+        font-size:16px;
+    }
+    .input-message{
+        margin-top: 10px;
+    }
+    
+    .send-form-button input{
+        font-size: 20px;
+        width: 100%;
+    }
+    .send-form-button{
+        margin: 5px 0;
+    }
 }

@@ -2,10 +2,14 @@
     background-color: #fff;
     display: flex;
     flex-direction: row;
-    height: 80px;
+    min-height: 80px;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
 }
 .logo-section{
-    width: 400px;
+    width: 50%;
+    max-width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,7 +42,84 @@
 }
 @media (hover: hover){
     .links span:hover {
-        
         color: #858181;
+    }
+}
+.hamburger-menu{
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.hamburger-menu span{
+    background-color: #858181;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s;
+    border-radius:2px;
+    
+}
+/* transform to x*/
+.hamburger-menu.active span:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger-menu.active span:nth-child(2){
+    opacity:0;
+}
+.hamburger-menu.active span:nth-child(3){
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+@media (max-width: 768px){
+    .header{
+        flex-direction: row;
+        align-items: center;
+        min-height: auto;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .logo-section{
+        width: auto;
+        max-width: 300px;
+        justify-content: flex-start;
+    }
+    .parot-logo{
+        height: 50px;
+    }
+    .logo-words{
+        font-size: 50px;
+    }
+    .links{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        position: absolute;
+        background-color: white;
+        padding: 20px;
+        top: 80px;
+        right: 0;
+        text-align: center;
+        row-gap: 10px;
+        z-index: 1000;
+    }
+    .links.active{
+        display: flex;
+    }
+    .hamburger-menu{
+        display: flex;
+
+    }
+}
+
+@media(max-width: 480px){
+    .logo-section{
+        width: 70%;
+        max-width: 200px;
+        justify-content: flex-start;
+    }
+    .links{
+        font-size: 16px;
     }
 }
