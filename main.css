@@ -181,7 +181,7 @@
     display: flex;
     flex-direction: column;
 }
-.testimonials-title, .ourteam-title, .faqs-title{
+.testimonials-title, .ourteam-title, .faqs-title, .chatbot-title{
     height: 50px;
     color: #9A3EAA;
     font-size: 25px;
@@ -335,4 +335,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.chatbot-section{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.chatbot-area{
+    background-color: #FAF9F9;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 150px 20px 150px;
+    border-color: #9f46af;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    padding:10px;
+}
+.messages-box{
+    width: 100%;
+    flex: 1;
+}
+.input-area{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-color: #9f46af;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    margin: 10px 10px 0 10px;
+
+}
+.input-box{
+    flex: 1;
+    min-width: 0;
+    background-color: #FFF9F9;
+    border: none;
+    padding: 12px 5px 12px 5px;
+}
+.input-box::placeholder{
+    font-size: 20px;
+    color: rgb(156, 153, 153);
+}
+.send-button{
+    background-color: #9A3EAA;
+    height: 45px;
+    width: 45px;
+    border-radius: 22px;
+    border: none;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+.arrow-icon {
+  filter: invert(1) brightness(2);
 }
