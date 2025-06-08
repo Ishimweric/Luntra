@@ -6,6 +6,8 @@
     padding: 5px;
     width: 100%;
     align-items: center;
+    position: fixed;
+    z-index: 2000;
 }
 .logo-section{
     width: 50%;
