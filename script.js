@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    // gonna implement visitor counter logic using local storage
+
+    const visitorCountDisplay= document.querySelector('#visitor-count');
+    if(visitorCountDisplay){
+        let count =parseInt(localStorage.getItem('visitorCount')) || 0;
+        if(!sessionStorage.getItem('visited')){
+            count++;
+            localStorage.setItem('visitorCount',count);
+            sessionStorage.setItem('visited','true');
+        }
+        visitorCountDisplay.textContent=count;
+        console.log('visitors count',count);
+    }
+
     const hamburger= document.querySelector('.hamburger-menu');
     const navlinks = document.querySelector('.links');
     hamburger.addEventListener('click', ()=>{
