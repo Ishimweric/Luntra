@@ -69,7 +69,7 @@ A passionate self-taught frontend developer currently enrolled in the DirectED B
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/luntra-landing-page.git
+   git clone https://github.com/Ishimweric/Luntra.git
 2. Open index.html in any browser.
 3. Or simply view it live at: https://ishimweric.github.io/Luntra/
 
