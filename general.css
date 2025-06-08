@@ -4,3 +4,7 @@
     box-sizing: border-box;
     font-family: ADLaM Display, Arial;
 }
+a{
+    all: unset;
+    transition: all 0.5s;
+}

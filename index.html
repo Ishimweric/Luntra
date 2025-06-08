@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header class="header">
@@ -30,9 +30,9 @@
             <span></span>
         </div>
         <div class="links">
-            <span>About</span>
-            <span>Services</span>
-            <span>Contact us&#709;</span>
+            <span><a href="#about-section">About</a></span>
+            <span><a href="#products-section">Services</a></span>
+            <span><a href="#form-section">Contact us</a></span>
         </div>
     </header>
 
@@ -52,7 +52,7 @@
             </div>
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="about-section">
             <div class="about-words-container">
                 <div class="about-words">
                     <div class="our-story">
@@ -85,48 +85,16 @@
             </div>
         </section>
 
-        <section class="products-section">
-            <div class="products-toggle">toggle</div>
+        <section class="products-section" id="products-section">
+            <div class="products-toggle">
+                <button class="toggle-button active" data-level="starter">Starter</button>
+                <button class="toggle-button" data-level ="Fluent"> Fluent</button>
+            </div>
             <div class="product-container">
                 <div class="left-scroll">
                     <img src="icons/less-than.svg" alt="left-scroll">
                 </div>
-                <div class="actual-product">
-                    <div class="product-title">Luntra Talkbot</div>
-                    <div class="product-info">
-                        <div class="product-description-container">
-                            <h3 class="product-pretitle">What it does</h3>
-                            <p class="product-description">
-                                It simulates natural conversations with an intelligent chatbot that listens, responds, and 
-                                adapts based on the learner&rsquo;s level and goals.
-                            </p>
-                            <br>
-                            <h3 class="product-pretitle">Impact</h3>
-                            <p class="product-description">
-                                Builds confidence in speaking, improves pronunciation, and accelerates fluency through 
-                                active speaking not just reading or writing.
-                            </p>
-                            <br>
-                            <h3 class="product-pretitle">Key features</h3>
-                            <ul class="product-description">
-                                <li>Real-time spoken interaction</li>
-                                <li>Language-level personalization</li>
-                                <li>Feedback on grammar, pronunciation, and vocabulary</li>
-                                <li>Switch between casual and formal conversation modes</li>
-                            </ul>
-                            <br>
-                            <h3 class="product-pretitle">Tools used</h3>
-                            <ul class="product-description">
-                                <li>OpenAI GPT </li>
-                                <li>Rasa NLU</li>
-                                <li>Whisper by OpenAI</li>
-                                <li>Text-to-Speech by ElevenLabs</li>
-                            </ul>
-                        </div>
-                        <div class="product-image">
-                            <img src="images/robot.jpg" alt="robot" style="height: auto;" >
-                        </div>
-                    </div>
+                <div class="product-container-inner">
                 </div>
                 <div class="right-scroll">
                     <img src="icons/greater-than.svg" alt="right-scroll">
@@ -298,7 +266,7 @@
             </div>
         </section>
 
-        <section class="form-section">
+        <section class="form-section" id="form-section">
             <h3 class="form-title">CONTACT US</h3>
             <div class="form-container">
                 <form id="contact-form">
@@ -332,9 +300,16 @@
             <span><img src="icons/icons8-telegram-app.svg" alt="linkedin icon"></span>
         </div>
         <div class="privacy-policy">
-            <p><a href="google.com">Terms and services</a></p>
-            <p><a href="google.com">Privacy policy</a></p>
+            <p><a href="google.com"><u>Terms and services</u></a></p>
+            <p><a href="google.com"><u>Privacy policy</u></a></p>
+        </div>
+        <div class="visitors-counter">
+            <span>Visitors: <span id="visitor-count">Loading...</span></span>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <button class="back-to-top" title="Back to top">
+        <img src="icons/arrow-up (1).svg" alt="arrow up" class="back-to-top-icon">
+    </button>
 </body>
 </html>

@@ -22,3 +22,18 @@ footer{
 .social-links span, .privacy-policy p{
     cursor: pointer;
 } 
+.visitor-counter{
+    text-align: center;
+    margin-top: 11px;
+    font-size: 18px;
+    color: #202022;
+}
+#visitor-count{
+    color: #9a3eaa;
+    font-weight: bold;
+}
+@media(max-width: 480px){
+    .visitor-counter{
+        font-size: 14px;
+    }
+}
