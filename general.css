@@ -8,7 +8,11 @@ a{
     all: unset;
     transition: all 0.5s;
 }
-
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+}
 /* this are variables for day/night toggle */
 :root{
     /* light mode and this is the default */

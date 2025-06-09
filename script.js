@@ -334,4 +334,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
         });
     });
     loadContext();
+
+    // and this is toogle
+    const darkModeToggle= document.getElementById('dark-mode-toggle');
+    const darkmodeIcon= darkModeToggle.querySelector('.dark-mode-icon');
+    function setTheme(theme){
+        document.documentElement.setAttribute('data-theme',theme);
+        localStorage.setItem('theme',theme);
+        darkmodeIcon.src=theme==='dark'?'icons/moon.svg':'icons/sun.svg';
+        darkModeToggle.setAttribute('aria-label', `Toggle${theme==='dark'?'light':'dark'}mode`);
+        console.log(`theme set to:${theme}`);
+    }
+
+    if(darkModeToggle){
+        //load saved or default theme
+        const savedTheme= localStorage.getItem('theme')||'light';
+        setTheme(savedTheme);
+        //toogle onclick
+        darkModeToggle.addEventListener('click',()=>{
+            const currentTheme = document.documentElement.getAttribute('data-theme')||'light';
+            const newTheme = currentTheme==='light'?'dark':'light';
+            setTheme(newTheme);
+        });
+    }
+    else{
+        console.error('dark theme not found');
+    }
 });

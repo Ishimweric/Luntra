@@ -1,5 +1,5 @@
 .header{
-    background-color: #fff;
+    background-color: var(--button-text);
     display: flex;
     flex-direction: row;
     min-height: 80px;
@@ -22,7 +22,7 @@
 }
 .logo-words{
     font-size: 50px;
-    color: #9A3EAA;
+    color: var(--accent-color);
 }
 .drop-down-icon{
     font-size: 18px;
@@ -35,7 +35,7 @@
     flex: 1;
     column-gap: 30px;
     padding-right: 30px;
-    color: #9A9393;
+    color: var(--secondary-text);
     font-size: 20px;
 }
 .links span{
@@ -57,12 +57,34 @@
     cursor: pointer;
 }
 .hamburger-menu span{
-    background-color: #858181;
+    background-color: var(--text-color);
     height: 3px;
     width: 100%;
     transition: all 0.3s;
     border-radius:2px;
     
+}
+.dark-mode-toggle{
+    background-color: var(--button-bg);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dark-mode-toggle:hover, .dark-mode-toggle:focus{
+    background-color: var(--button-hover);
+    outline: 2px solid var(--accent-hover);
+    outline-offset: 2px;
+}
+.dark-mode-icon{
+    width: 24px;
+    height: 24px;
+    filter: invert(1) brightness(2);
 }
 /* transform to x*/
 .hamburger-menu.active span:nth-child(1){
@@ -98,7 +120,7 @@
         flex-direction: column;
         width: 200px;
         position: absolute;
-        background-color: white;
+        background-color: var(--section-bg);
         padding: 20px;
         top: 80px;
         right: 0;
@@ -123,5 +145,13 @@
     }
     .links{
         font-size: 16px;
+    }
+    .dark-mode-toggle{
+        width: 35px;
+        height: 35px;
+    }
+    .dark-mode-icon{
+        width:20px;
+        height:20px;
     }
 }

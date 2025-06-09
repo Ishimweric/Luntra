@@ -1,4 +1,5 @@
 footer{
+    background-color: var(--section-bg);
     display: flex;
     align-items: center;
     height: auto; 
@@ -13,6 +14,12 @@ footer{
     justify-content: center;
     width: 100%;
 }
+.privacy-policy a{
+    color: var(--text-color);
+}
+.privacy-policy a:hover{
+    color: var(--accent-hover);
+}
 .social-links{
     display: flex;
     justify-content: center;
@@ -26,7 +33,7 @@ footer{
     text-align: center;
     margin-top: 11px;
     font-size: 18px;
-    color: #202022;
+    color: var(--text-color);
 }
 #visitor-count{
     color: #9a3eaa;
@@ -35,5 +42,9 @@ footer{
 @media(max-width: 480px){
     .visitor-counter{
         font-size: 14px;
+    }
+    .privacy-policy{
+        flex-direction: column;
+        row-gap: 10px;
     }
 }

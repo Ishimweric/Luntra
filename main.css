@@ -28,7 +28,7 @@
 .hero-words-container p{
     text-align: center;
     font-size: 40px;
-    color: #202022;
+    color: var(--text-color);
 }
 .hero-cta-container{
     flex: 1;
@@ -40,9 +40,9 @@
 }
 .get-started-button, .about-cta{
     padding: 11px 50px 11px 50px;
-    background-color: #9A3EAA;
+    background-color: var(--button-bg);
     border: none;
-    color: white;
+    color:var(--button-text);
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -51,8 +51,8 @@
     padding: 10px 10px 10px 10px;
     font-size: 20px;
     color: #1897A1;
-    background-color: #FFF9F9;
-    border-color: #DBCBCB;
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
     border-width: 3px;
     border-radius: 5px;
     border-style: solid;
@@ -60,16 +60,16 @@
 }
 @media (hover: hover){
     .get-started-button:hover, .about-cta:hover{
-        background-color: #9f46af;
+        background-color: var(--button-hover);
     }
     .sign-up-button:hover{
-        border-color: #a09696;
+        border-color: var(--accent-hover);
     }
 }
 
 .about-section{
     display: flex;
-    background-color: #F9F6F6;
+    background-color: var(--alt-section-bg);
     height: auto;
     flex-wrap: wrap;
 }
@@ -87,7 +87,7 @@
 }
 .about-subtitle{
     text-align: center;
-    color: #9A3EAA;
+    color: var(--accent-color);
     font-size: 25px;
     margin-bottom: 5px;
 }
@@ -126,8 +126,8 @@
 }
 .toggle-button{
     padding: 10px 20px;
-    background-color: #dbcbcb;
-    color: #202022;
+    background-color: var(--input-bg);
+    color: var(--text-color);
     border: none;
     border-radius: 2px;
     font-size: 17px;
@@ -135,12 +135,12 @@
     cursor: pointer;
 }
 .toggle-button.active{
-    background-color: #9A3EAA;
-    color: white;
+    background-color: var(--button-bg);
+    color: var(--button-text);
 }
 .toggle-button:hover{
-    background-color: #650775;
-    color: white;
+    background-color: var(--button-hover);
+    color: var(--button-text);
 }
 .product-container{
     width: 100%;
@@ -148,7 +148,7 @@
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    border: 2px solid #9A3EAA;
+    border: 2px solid var(--border-color);
 }
 .actual-product{
     width: calc(100%/3);
@@ -165,7 +165,7 @@
     height: 50px;
     align-items: center;
     justify-content: center;
-    color: #9A3EAA;
+    color: var(--accent-color);
     font-size: 30px;
 }
 .product-info{
@@ -189,12 +189,12 @@
     margin-left: 5px;
 }
 .product-pretitle{
-    color: #9f46af;
+    color: var(--accent-color);
     font-size: 20px;
 }
 .product-description{
     font-weight: 300;
-    color: #202022;
+    color: var(--text-color);
     margin: 0 0 10px;
 }
 .product-image{
@@ -206,7 +206,7 @@
     width: 100%;
     height: auto;
     max-width: 300px;
-    border: 3px solid #9f46af;
+    border: 3px solid var(--border-color);
 }
 .left-scroll, .right-scroll{
     position: absolute;
@@ -217,7 +217,7 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-    background-color: #9A3EAA;
+    background-color: var(--button-bg);
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -229,7 +229,7 @@
     filter: invert(1) brightness(2);
 }
  .left-scroll:hover, .right-scroll:hover{
-    background-color: #650775;
+    background-color: var(--button-hover);
  }
  .left-scroll{
     left: 10px;
@@ -248,13 +248,13 @@
 .dot{
     height: 14px;
     width: 14px;
-    background-color: gray;
+    background-color: var(--dot-inactive);
     border-radius: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .dot.active{
-    background-color: #9A3EAA;
+    background-color: var(--dot-active);
 }
 .product-container-inner{
     display: flex;
@@ -263,7 +263,7 @@
     flex-direction: row;
 }
 .testimonials{
-    background-color: #F9F6F6;
+    background-color: var(--alt-section-bg);
     /* height: auto; */
     display: flex;
     flex-direction: column;
@@ -272,7 +272,7 @@
 }
 .testimonials-title, .ourteam-title, .faqs-title, .chatbot-title, .form-title{
     height: 50px;
-    color: #9A3EAA;
+    color: var(--accent-color);
     font-size: 25px;
     text-align: center;
     padding: 10px 0;
@@ -290,7 +290,7 @@
     margin: 10px;
     border-radius: 8px;
     border-width: 3px;
-    border-color: #9A3EAA;
+    border-color: var(--border-color);
     border-style: solid;
     min-width: 200px;
 }
@@ -314,7 +314,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #615D5D;
+    color: var(--secondary-text);
 }
 .commentor-image{
     height: 70px;
@@ -323,7 +323,7 @@
 }
 
 .our-motto-container{
-    background-color: white;
+    background-color: var(--section-bg);
     height: 100px;
     display: flex;
     align-items: center;
@@ -332,11 +332,11 @@
 }
 .our-motto-container h1{
     font-size: 50px;
-    color:#9A3EAA;
+    color:var(--accent-color);
 }
 
 .our-team-section{
-    background-color:#F9F6F6;
+    background-color:var(--alt-section-bg);
     display: flex;
     flex-direction: column;
     /* height: auto; */
@@ -352,12 +352,12 @@
 }
 .team-member1, .team-member2, .team-member3{
     flex: 1;
-    background-color: white;
+    background-color: var(--section-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
-    border-color: #9A3EAA;
+    border-color: var(--border-color);
     border-radius: 5px;
     border-width: 3px;
     border-style: solid;
@@ -381,15 +381,17 @@
 }
 .member-name{
     font-size: 25px;
+    color: var(--text-color);
 }
 .member-role{
     font-size: 20px;
-    color: #615D5D;
+    color: var(--secondary-text);
 }
 .member-bio{
     display: flex;
     align-items: center;
     padding: 0 10px 10px 10px;
+    color: var(--text-color);
 }
 
 .faq-section{
@@ -408,12 +410,12 @@
 }
 .faq-container{
     flex: 1;
-    background-color: #F9F6F6;
+    background-color: var(--alt-section-bg);
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 15px;
-    border-color: #9f46af;
+    border-color: var(--border-color);
     border-radius: 5px;
     border-width: 3px;
     border-style: solid;
@@ -421,7 +423,7 @@
     transition: border-color 0.3s, margin 0.3s;
 }
 .faq-container:hover{
-    border-color: #650775;
+    border-color: var(--accent-hover);
     border-style: solid;
     margin: 2px;
 }
@@ -434,6 +436,7 @@
 .faq-question{
     flex: 1;
     font-size: 20px;
+    color: var(--text-color);
 }
 .faq-icon{
     width: 50px;
@@ -453,7 +456,7 @@
     display: none;
     padding: 10px;
     font-size: 18px;
-    color: #202022;
+    color: var(--text-color);
 }
 .faq-container.active .faq-answer{
     display:block;
@@ -467,18 +470,18 @@
 }
 .chatbot-instructions{
     text-align: center;
-    color: #202022;
+    color: var(--text-color);
     font-size: 16px;
     margin-bottom: 20px;
 }
 .chatbot-area{
-    background-color: #FAF9F9;
+    background-color: var(--section-bg);
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 38px 20px 38px;
-    border-color: #9f46af;
+    border-color:var(--border-color);
     border-radius: 5px;
     border-width: 3px;
     border-style: solid;
@@ -502,27 +505,27 @@
     line-height: 1.3;
 }
 .user-message{
-    color: white;
-    background-color: #9A3EAA;
+    color: var(--button-text);
+    background-color: var(--button-bg);
     text-align: right;
     margin-left: auto;
     border-radius: 5px;
     padding: 5px;
 }
 .bot-message{
-    background-color: rgb(196, 192, 192);
-    color: #202022;
+    background-color: var(--dot-inactive);
+    color: var(--text-color);
     margin-right: auto;
     border-radius: 5px;
     padding: 5px;
 }
 .input-area{
-    background-color: white;
+    background-color: var(--input-bg);
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
-    border-color: #9f46af;
+    border-color: var(--border-color);
     border-radius: 30px;
     border-width: 3px;
     border-style: solid;
@@ -533,18 +536,19 @@
 .input-box{
     flex: 1;
     min-width: 0;
-    background-color: white;
+    background-color: var(--input-bg);
     border: none;
     padding: 12px 5px 12px 5px;
     font-size: 20px;
     outline: none;
+    color: var(--text-color);
 }
 .input-box::placeholder{
     font-size: 20px;
-    color: rgb(156, 153, 153);
+    color: var(--secondary-text);
 }
 .send-button{
-    background-color: #9A3EAA;
+    background-color: var(--button-bg);
     height: 45px;
     width: 45px;
     border-radius: 22px;
@@ -553,7 +557,7 @@
     cursor: pointer;
 }
 .send-button:hover{
-    background-color: #650775;
+    background-color: var(--button-hover);
 }
 .arrow-icon {
   filter: invert(1) brightness(2);
@@ -567,15 +571,15 @@
     margin-top: 20px;
 }
 .sample-questions-title{
-    color: #9A3EAA;
+    color: var(--accent-color);
     font-size: 20px;
     margin-bottom: 10px;
 }
 .sample-btn{
     font-size: 17px;
     padding: 8px 15px;
-    background-color: #650775;
-    color: white;
+    background-color: var(--button-bg);
+    color: var(--button-text);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -583,11 +587,11 @@
     width: 400px;
 }
 .sample-btn:hover{
-    background-color: #9A3EAA;
+    background-color:var(--button-hover);
 }
 .error-message{
-    color: #202022;
-    background-color: #ff3737;
+    color: var(--text-color);
+    background-color: var(--error-bg);
     padding: 10px;
     border-radius: 11px;
     margin: 10px 0;
@@ -595,7 +599,7 @@
 }
 
 .form-section{
-    background-color: #FFF9F9;
+    background-color: var(--section-bg);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -624,24 +628,28 @@ form{
     width: 80px;
     font-size: 20px;
     margin-top: 12px;
+    color: var(--text-color);
 }
 .input-message{
     margin-top: 50px;
 }
-.input-row input{
+.input-row input, textarea{
     width: 373px;
     padding: 12px 5px;
-    border-color: #9f46af;
+    border-color: var(--input-border);
     border-radius: 10px;
     border-width: 3px;
     border-style: solid;
     outline: none;
+    background-color: var(--input-bg);
+    color: var(--text-color);
 }
-input::placeholder{
+input::placeholder, textarea::placeholder{
     font-size: 20px;
+    color: var(--secondary-text);
 }
 textarea{
-    border-color: #9f46af;
+    border-color: var(--border-color);
     border-radius: 10px;
     border-width: 3px;
     border-style: solid;
@@ -658,8 +666,8 @@ textarea::placeholder{
 }
 .send-form-button input{
     padding: 8px 25px;
-    background-color: #9f46af;
-    color: white;
+    background-color: var(--button-bg);
+    color: var(--button-text);
     font-size: 25px;
     border: none;
     border-radius: 5px;
@@ -668,11 +676,11 @@ textarea::placeholder{
     margin-right: 60px;
 }
 .send-form-button input:hover{
-    background-color: #650775;
+    background-color: var(--button-hover);
 }
 .success-message{
     display: none;
-    color: #2e7d32;
+    color: var(--success-text);
     font-size: 16px;
     margin-top: 10px;
     width: 100%;
@@ -689,7 +697,7 @@ textarea::placeholder{
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #9A3EAA;
+    background-color: var(--button-bg);
     border: none;
     border-radius: 25px;
     display: none;
@@ -699,7 +707,7 @@ textarea::placeholder{
     transition: background-color 0.3s, opacity 0.3s;
 }
 .back-to-top:hover{
-    background-color: #650775;
+    background-color: var(--button-hover);
 }
 .back-to-top.show{
     display: flex;
