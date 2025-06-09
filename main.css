@@ -2,7 +2,7 @@
     min-height: 500px;
     display: flex;
     padding: 80px 0 0 0;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .hero-image-container{
     height: 100%;
@@ -723,6 +723,7 @@ textarea::placeholder{
     .hero-section{
         min-height: 250px;
         padding: 80px 0 0 0;
+        flex-direction: column;
     }
     .hero-words-container p{
         font-size: 30px;
@@ -730,6 +731,9 @@ textarea::placeholder{
     .get-started-button, .sign-up-button, .about-cta{
         font-size: 18px;
         padding: 10px 40px;
+    }
+    .about-section{
+        flex-direction: column;
     }
     .about-photo-container{
         padding: 15px;
@@ -740,6 +744,9 @@ textarea::placeholder{
     }
     .about-text{
         font-size: 18px;
+    }
+    .our-team{
+        flex-direction: column;
     }
     .actual-product{
         flex-direction: column;
