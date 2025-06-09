@@ -131,13 +131,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let isDragging = false;
 
     function updateCarousel(){
+        const percentage = 100/carouselItems.length;
         console.log('Current index:', currentIndex);
         console.log('Container width:', carouselInner.parentElement.offsetWidth);
         console.log('Inner width:', carouselInner.offsetWidth);
         console.log('Product width:', carouselItems[0].offsetWidth);
         console.log('Transform applied:', `translateX(-${currentIndex * 33.33}%)`);
         console.log('Applying transform for index:', currentIndex);
-        carouselInner.style.transform =`translateX(-${currentIndex*33.33}%)`;
+        carouselInner.style.transform =`translateX(-${currentIndex*percentage}%)`;
         dots.forEach( (dot,index)=>{
             dot.classList.toggle('active',index===currentIndex);
         });

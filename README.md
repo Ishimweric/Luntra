@@ -72,6 +72,7 @@ A passionate self-taught frontend developer currently enrolled in the DirectED B
    git clone https://github.com/Ishimweric/Luntra.git
 2. Open index.html in any browser.
 3. Or simply view it live at: https://ishimweric.github.io/Luntra/
+4. Figma link: https://www.figma.com/design/4qvaJnNWb0221r0XicfZrb/Luntra?node-id=0-1&p=f&t=KpuVDvkMPYOKzJBP-0
 
 ## Licence
 
