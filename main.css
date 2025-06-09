@@ -580,6 +580,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
+    width: 400px;
 }
 .sample-btn:hover{
     background-color: #9A3EAA;
@@ -778,6 +779,7 @@ textarea::placeholder{
     }
     .sample-btn{
         font-size: 15px;
+        width: 300px;
     }
     .testimonials-title, .ourteam-title, .faqs-title,.form-title{
         font-size: 22px;
@@ -868,6 +870,7 @@ textarea::placeholder{
     .sample-btn{
         font-size: 12px;
         padding: 6px 12px;
+        width: 280px;
     }
     
     .testimonials{

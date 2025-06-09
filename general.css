@@ -8,3 +8,46 @@ a{
     all: unset;
     transition: all 0.5s;
 }
+
+/* this are variables for day/night toggle */
+:root{
+    /* light mode and this is the default */
+    --bg-color: white;
+    --section-bg:#fff9f9;
+    --alt-section-bg: #f9f6f6;
+    --text-color: #202022;
+    --accent-color: #9a3eaa;
+    --accent-hover:#650775;
+    --border-color:#9f46af;
+    --secondary-text:#615d5d;
+    --button-bg: #9a3eaa;
+    --button-text:#fff;
+    --button-hover:#650775;
+    --input-bg:#fff;
+    --input-border:#9f46af;
+    --error-bg:#ff3737;
+    --success-text:#2e7d32;
+    --dot-inactive:#808080;
+    --dot-active:#9a3eaa;
+}
+
+/* for the dark or night theme */
+[data-theme="dark"]{
+    --bg-color: #1a1a1a;
+    --section-bg: #2c2c2c;
+    --alt-section-bg: #333333;
+    --text-color: #e0e0e0;
+    --accent-color: #b565c7;
+    --accent-hover:#8a3a9b;
+    --border-color:#b565c7;
+    --secondary-text:#b0b0b0;
+    --button-bg: #b565c7;
+    --button-text:#1a1a1a;
+    --button-hover:#8a3a9b;
+    --input-bg:#333333;
+    --input-border:#b565c7;
+    --error-bg:#d42607;
+    --success-text:#4caf50;
+    --dot-inactive:#666666;
+    --dot-active:#b565c7;
+}
