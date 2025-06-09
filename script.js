@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             sessionStorage.setItem('visited','true');
         }
         visitorCountDisplay.textContent=count;
-        console.log('visitors count',count);
     }
 
     const hamburger= document.querySelector('.hamburger-menu');
@@ -116,29 +115,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //actual carousell implementation/logic
     const carouselInner = document.querySelector('.product-container-inner');
-    console.log('carouselInner:', carouselInner);
     const carouselItems = document.querySelectorAll('.actual-product');
-    console.log('carouselItems count:', carouselItems.length);
     const prevButton = document.querySelector ('.left-scroll');
     const nextButton= document.querySelector('.right-scroll');
-    console.log('prevButton:', prevButton);
-    console.log('nextButton:', nextButton);
     
 
     const dots = document.querySelectorAll('.dot');
-    console.log('dots count:', dots.length);
     let currentIndex = 0;
     let startX = 0;
     let isDragging = false;
 
     function updateCarousel(){
         const percentage = 100/carouselItems.length;
-        console.log('Current index:', currentIndex);
-        console.log('Container width:', carouselInner.parentElement.offsetWidth);
-        console.log('Inner width:', carouselInner.offsetWidth);
-        console.log('Product width:', carouselItems[0].offsetWidth);
-        console.log('Transform applied:', `translateX(-${currentIndex * 33.33}%)`);
-        console.log('Applying transform for index:', currentIndex);
         carouselInner.style.transform =`translateX(-${currentIndex*percentage}%)`;
         dots.forEach( (dot,index)=>{
             dot.classList.toggle('active',index===currentIndex);
@@ -147,20 +135,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //for left scroll button
     prevButton.addEventListener('click',()=>{
-        console.log('Prev clicked, old index:', currentIndex);
         currentIndex= (currentIndex>0)?
         currentIndex -1: carouselItems.length-1;
-        console.log('Prev new index:', currentIndex);
         updateCarousel();
     });
 
     //for next button
     nextButton.addEventListener('click',(e)=>{
         e.preventDefault();
-        console.log('Next clicked, old index:', currentIndex);
         currentIndex = (currentIndex < carouselItems.length-1)?
         currentIndex +1:0;
-        console.log('Next new index:', currentIndex);
         updateCarousel();
     });
     //for when you click the dots to update the coursel
@@ -226,10 +210,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             const response= await fetch('https://ishimweric.github.io/Luntra/context.txt');
             if(!response.ok) throw new Error(`HTTP error: ${response.status}`);
             context = await response.text();
-            console.log('Context loaded:', context);
         }
         catch(error){
-            console.error('Context load error:',error);
             context =`
             You are LuntraBot, the friendly and intelligent virtual assistant for Luntra, a language-learning platform 
             founded in 2025 by Eric Ishimwe. Your purpose is to assist website visitors, answer their questions, and 
@@ -319,7 +301,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             messagesBox.lastChild.textContent= response;
         }
         catch(error){
-            console.error('Chat error:', error);
             messagesBox.lastChild.textContent= 'Oops, something went wrong. Please try again!';
         }
         messagesBox.scrollTop=messagesBox.scrollHeight;
@@ -345,7 +326,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         localStorage.setItem('theme',theme);
         darkmodeIcon.src=theme==='dark'?'icons/moon.svg':'icons/sun.svg';
         darkModeToggle.setAttribute('aria-label', `Toggle${theme==='dark'?'light':'dark'}mode`);
-        console.log(`theme set to:${theme}`);
     }
 
     if(darkModeToggle){
@@ -359,7 +339,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             setTheme(newTheme);
         });
     }
-    else{
-        console.error('dark theme not found');
-    }
+    // else{
+    //     console.error('dark theme not found');
+    // }
 });
