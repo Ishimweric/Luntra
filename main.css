@@ -491,6 +491,9 @@
     flex: 1;
     overflow-y: auto;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
 }
 .chatbot-message{
     margin: 10px 0;
@@ -504,12 +507,14 @@
     text-align: right;
     margin-left: auto;
     border-radius: 5px;
+    padding: 5px;
 }
 .bot-message{
     background-color: rgb(196, 192, 192);
     color: #202022;
     margin-right: auto;
     border-radius: 5px;
+    padding: 5px;
 }
 .input-area{
     background-color: white;
