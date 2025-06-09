@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             setTheme(newTheme);
         });
     }
-    // else{
-    //     console.error('dark theme not found');
-    // }
+    else{
+        console.error('dark theme not found');
+    }
 });
