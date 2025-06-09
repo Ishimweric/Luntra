@@ -212,4 +212,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
             window.scrollTo({top:0, behavior:'smooth'});
         });
     }
+    // js for the ai chatbot 
+    const inputBox =document.getElementById('input-box');
+    const sendButton= document.getElementById('send-button');
+    const messagesBox= document.getElementById('messages-box');
+    le
 });

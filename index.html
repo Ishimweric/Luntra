@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luntra</title>
+    <!-- Linked google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Actor&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <!-- linked my external files -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="footer.css">
 
     <!-- add a favicon -->
-     <link rel="icon" href="icons/favicon.jpg" type="image/jpg">
-    
+    <link rel="icon" href="icons/favicon.jpg" type="image/jpg">
+    <!-- Linked puter.js -->
+    <script src="https://js.puter.com/v2/"></script>
 </head>
 <body>
     <header class="header">
@@ -258,14 +257,23 @@
 
         <section class="chatbot-section">
             <h3 class="chatbot-title">AI ASSISTANT</h3>
+            <p class="chatbot-instructions">Ask our AI about our story, services, or how you can get involved.</p>
             <div class="chatbot-area">
-                <div class="messages-box"></div>
+                <div class="messages-box" id="messages-box"></div>
                 <div class="input-area">
-                    <input type="text" placeholder="Ask anything about Luntra" class="input-box">
-                    <button class="send-button">
+                    <input type="text" placeholder="Ask anything about Luntra" class="input-box" id="input-box">
+                    <button class="send-button" id="send-button">
                         <img src="icons/arrow-up (1).svg" alt="send-arrow"  class="arrow-icon">
                     </button>
                 </div>
+            </div>
+            <div class="sample-questions">
+                <h3 class="sample-questions-title">Sample Questions</h3>
+                <button class="sample-btn" data-question="What problems does luntra solve?">What problems does luntra solve?</button>
+                <button class="sample-btn" data-question="Our services and learning approach?">Our services and learning approach?</button>
+                <button class="sample-btn" data-question="The team behind Luntra?">The team behind Luntra?</button>
+                <button class="sample-btn" data-question="How to contact us?">How to contact us?</button>
+                <button class="sample-btn" data-question="The founding story?">The founding story?</button>
             </div>
         </section>
 
