@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     // caruosel for product section
+    // failed to work i don't know why
     const productContainer = document.querySelector('.product-container');
     const productInner = document.createElement('div');
     productInner.className= 'product-container-inner';
