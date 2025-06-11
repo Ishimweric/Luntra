@@ -812,6 +812,10 @@ textarea::placeholder{
     .testimonials-container{
         flex-direction: column;
     }
+    .our-motto-container{
+        padding: 10px;
+        height: auto;
+    }
     .our-motto-container h1{
         font-size: 28px;
     }

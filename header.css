@@ -40,7 +40,7 @@
 }
 .links span{
     cursor: pointer;
-    transition: color 0.5s;
+    transition: color 0.2s;
 }
 @media (hover: hover){
     .links span:hover {

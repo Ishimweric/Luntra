@@ -181,6 +181,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         isDragging = false;
     });
     updateCarousel();
+    //for products toggle button , a simple js
+    // const starterButton = document.querySelector('.starter-button');
+    // const fluentButton= document.querySelector('.fluent-button');
+    // starterButton.addEventListener('click',()=>{
+    //     product
+    // })
 
     //this is the js for the back to top button
     const backToTopButton= document.querySelector('.back-to-top');
