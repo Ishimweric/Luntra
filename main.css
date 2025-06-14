@@ -511,7 +511,7 @@
     row-gap: 3px;
 }
 .chatbot-message{
-    margin: 10px 0;
+    margin: 10px 2px;
     max-width: 80%;
     font-size: 15px;
     line-height: 1.3;
